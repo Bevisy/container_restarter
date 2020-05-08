@@ -1,4 +1,4 @@
-package util
+package tools
 
 import (
 	"fmt"
@@ -49,7 +49,7 @@ func TestResolver(t *testing.T) {
 	lookup = fakeLookup()
 	interval := time.Duration(time.Microsecond)
 
-	r := resolver("www.example.com", interval)
+	r := Resolver("www.example.com", interval)
 	for i := 0; i < len(changedIPs); i++ {
 		ip := <-r()
 		if changedIPs[i] != ip {
