@@ -1,8 +1,6 @@
 package tools
 
 import (
-	"fmt"
-	"net"
 	"testing"
 	"time"
 )
@@ -58,7 +56,7 @@ func TestResolver(t *testing.T) {
 	}
 }
 
-func TestLookup(t *testing.T) {
-	var domain = "www.google.com"
-	fmt.Println(net.LookupIP(domain))
-}
+//func TestLookup(t *testing.T) {
+//	var domain = "www.google.com"
+//	fmt.Println(net.LookupIP(domain))
+//}
