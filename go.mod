@@ -1,4 +1,4 @@
-module github.com/ruijzhan/container_restarter
+module github.com/bevisy/container_restarter
 
 go 1.14
 
